@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+*.yml
+*.lock
+*.md
+.next
+.serverless
+.serverless_nextjs
+.husky
