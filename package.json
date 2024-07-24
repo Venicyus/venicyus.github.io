@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "publish": "bash __publish.sh"
+    "publishh": "bash __publish.sh"
   },
   "dependencies": {
     "react": "^18",
