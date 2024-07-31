@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venicyus Paz</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .h-85vh {
+        height: 85vh;
+      }
+
+      .copied {
+        background-color: #d1fae5;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">
+        <a href="../../index.html">MyPage: Venicyus Paz</a>
+      </h1>
+
+      <div class="max-w-full h-85vh mx-auto bg-white p-6 rounded shadow flex">
+        <div class="w-1/2 pr-4 flex flex-col">
+          <h1 class="text-2xl font-bold mb-4">Input JSON</h1>
+
+          <textarea
+            id="json_input"
+            class="flex-1 p-2 border border-gray-300 rounded mb-4"
+            placeholder="Paste your JSON here..."
+            resize="none"
+          ></textarea>
+
+          <button
+            id="btn_process"
+            onclick="processRemoveDuplicates()"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          >
+            Process JSON
+          </button>
+        </div>
+
+        <div class="w-1/2 pl-4 flex flex-col">
+          <h2 class="text-2xl font-bold mb-4">Result</h2>
+
+          <div
+            id="result"
+            class="flex-1 bg-gray-50 border border-gray-200 rounded overflow-y-auto cursor-pointer p-4 mb-4"
+          >
+            <pre class="whitespace-pre-wrap"></pre>
+          </div>
+
+          <button
+            id="btn_copy"
+            class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+            onclick="copyToClipboard()"
+          >
+            Copy To Clipboard
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
